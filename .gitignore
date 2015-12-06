@@ -12,6 +12,8 @@ obj
 node_modules
 bower_components
 build
+test
+tests
 .tmp
 src/**/*.map
 src/**/*.js

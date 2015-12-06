@@ -1,0 +1,18 @@
+{
+  "name": "szczepaniakserify",
+  "description": "my template for angular gulp and browserify",
+  "main": "index.js",
+  "authors": [
+    "Michal Szczepaniak"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mszczepaniak/AngularSzczepaniakserify",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
