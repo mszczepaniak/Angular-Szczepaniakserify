@@ -7,7 +7,6 @@ var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
 var clean = require('gulp-clean');
-var runSequence = require('run-sequence');
 
 // tasks
 gulp.task('lint', function() {
@@ -67,9 +66,4 @@ gulp.task('default',
   ['lint', 'connect']
 );
 
-gulp.task('build', function() {
-  runSequence(
-    ['clean'],
-    ['lint', 'minify-css', 'minify-js', 'copy-html-files', 'copy-bower-components', 'connectDist']
-  );
-});
+gulp.task('build', ['clean', 'lint', 'minify-css', 'minify-js', 'copy-html-files', 'copy-bower-components', 'connectDist']);
